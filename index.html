@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/brain.js@2.0.0-alpha.12/dist/brain-browser.min.js"></script>
+        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+    </head>
+    <body>
+      <h1>Genesis Breyer P-Orridge</h1>
+      <img src="./assets/psychic-cross.png" alt="psychic cross" />
+      <h3> Quote Generator</h3>
+      <p id="instructions">Enter one to a few words and receive a machine generated quote from Genesis.</p>
+      <p id="showQuote" class="invisible">User Quote</p>
+      <form>
+        <input type="text" id="formInput" name="formInput" placeholder="Enter one to a few words..." />
+      </form>
+      <button id="textButton" onclick="handleReceiveQuote()">Receive Quote</button>
+      <button id="imgButton" class="invisible"><img src="./assets/psychic-cross-small.png" alt="small psychic cross"/></button>
+      <p>Please be patient, the proccess can take up to between one to three minutes.</p>
+      <blockquote cite="https://www.azquotes.com/quote/1203327">
+        People say, "I'm a woman trapped in a man's body" or "I'm a man trapped in a woman's body," but I say "I'm trapped in a body." - Genesis
+      </blockquote>
+    </body>
+</html>

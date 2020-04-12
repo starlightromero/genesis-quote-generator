@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+}
+
+.invisible {
+  display: none;
+  visibility: hidden;
+}
+
+body {
+  background-color: black;
+  border: 3px solid red;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 5vw;
+}
+
+h3 {
+  font-size: 4vw;
+}
+
+P {
+  font-family: Helvetica, sans-serif;
+  font-size: 2vh;
+}
+
+img {
+  width: 7vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input[type="text"] {
+  border: none;
+  border-bottom: 3px solid red;
+  background-color: black;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 2vh;
+  outline: none;
+  width: 40vh;
+}
+
+form input[type="text"]::placeholder {
+  color: grey;
+}
+
+button {
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+}
+
+button:active {
+  transform: scale3d(0.9, 0.9, 0.9);
+}
+
+#textButton {
+  padding: 2vh 5vh;
+  font-family: Helvetica, sans-serif;
+  font-size: 2vh;
+}
+
+#imgButton {
+  background-color: red;
+  padding: 1.5vh 2vh;
+}
+
+#imgButton img {
+  vertical-align: middle;
+  width: 2.5vh;
+}
+
+blockquote {
+  font-size: 1.5vh;
+  font-style: italic;
+}
+
+/* Shrink */
+
+.shrink {
+  -webkit-animation-name: shrink;
+  animation-name: shrink;
+  animation-duration: 200ms;
+}
+
+@-webkit-keyframes shrink {
+  from {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  to {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+}
+
+@keyframes shrink {
+  from {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  to {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+}
+
+/* Rotate */
+
+.rotate {
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  cursor: progress;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
